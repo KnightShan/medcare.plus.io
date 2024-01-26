@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: "DmSans-Regular", sans-serif;
+        background: linear-gradient(to right, #3498db, #2ecc71); 
+        color: #fff;
+      }
+
+      .main-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        animation: fadeIn 2s ease;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: #fff;
+        background-color: #2980b9;
+        padding: 10px; 
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        animation: colorChange 2s infinite alternate;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      a {
+        margin: 10px;
+        padding: 15px 30px;
+        text-decoration: none;
+        background: linear-gradient(to right, #3498db, #2ecc71); 
+        color: #fff;
+        border-radius: 8px;
+        transition: background 0.3s;
+        font-size: 1.2em;
+        animation: scaleButton 1s infinite alternate;
+      }
+
+      a:hover {
+        background: linear-gradient(to right, #2ecc71, #3498db); 
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes colorChange {
+        from {
+          color: #fff;
+        }
+        to {
+          color: #ff6f61;
+        }
+      }
+
+      @keyframes scaleButton {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
+      footer{
+        font-size: small;
+        color: white;
+        font-weight: lighter;
+        text-align: center;
+      }
+    </style>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="main-page">
+      <h1>Welcome to <span style="color: #2ecc71;">MED</span><span style="color: #ff6f61;">CARE</span>+</h1>
+      <p>Your trusted medical companion</p>
+
+     
+      <a href="login.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <footer>
+      <p>Copyright© 2024|All Right Reserved</p>
+    </footer>
+  </body>
+</html>

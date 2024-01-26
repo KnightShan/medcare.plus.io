@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./vars.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <style>
+    body {
+      font-family: "DmSans-Regular", sans-serif;
+      background-color: #94e6de;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .dashboard-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #3498db;
+      color: #fff;
+      width: 20%;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #4a4a4a;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-features {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      width: calc(33.333% - 20px);
+      margin: 10px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .highlighted-feature {
+      background-color: #e85a4f;
+      color: #fff;
+    }
+
+    a {
+      margin: 10px;
+      padding: 15px 30px;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      font-size: 1.2em;
+    }
+
+    a:hover {
+      background-color: #2980b9;
+    }
+    footer{
+      font-size: small;
+        color: white;
+        font-weight: lighter;
+        text-align: center;
+    }
+  </style>
+  <title>Dashboard Page</title>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <h2>MEDCARE+</h2>
+      <p>Welcome, Shantanu</p>
+
+      <a href="home.html">Home</a>
+
+    </div>
+
+    <div class="main-content">
+      <h1>Welcome to the MEDCARE+ Dashboard</h1>
+      <p>Your health at a glance</p>
+
+      <div class="dashboard-features">
+        <div class="feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Profile</h3>
+          <p>View and edit your profile information.</p>
+          <a href="#profile">View Profile</a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">ℹ</div>
+          <h3>Info</h3>
+          <p>Access important health information and records.</p>
+          <a href="#info">View Info</a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👩‍⚕</div>
+          <h3>Doctor Details</h3>
+          <p>Explore details about your healthcare providers.</p>
+          <a href="#doctor-details">View Doctors</a>
+        </div>
+
+        <div class="feature-card highlighted-feature">
+          <div class="feature-icon">💬</div>
+          <h3>Doctors AI</h3>
+          <p>Chat with our AI-powered doctors for immediate assistance.</p>
+          <a href="https://mediafiles.botpress.cloud/4516ac09-d5a0-4b97-ba81-9cb2a9116388/webchat/bot.html">Chat Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright© 2024|All Right Reserved</p>
+  </footer>
+
+</body>
+</html>
